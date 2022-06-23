@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-image: url("https://9.allegroimg.com/original/03cc74/3ac9cf604d67a7c172555dfd7af9/Szablon-malarski-na-sciane-mapa-swiata-100x200-cm");
+}
+
+.countries {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 30%;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #F5EBE0;
+    width: 120px;
+    height: 120px;
+}
+
+p {
+    color: #124559;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: .5s ease;
+}
+
+.card:hover {
+    background-color: #feeafa;
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
